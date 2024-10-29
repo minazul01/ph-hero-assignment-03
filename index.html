@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,11 +13,83 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <!-- style link -->
-    <link rel="stylesheet" href="style.css">n
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome cdn -->
+    <script src="https://kit.fontawesome.com/658d90af42.js" crossorigin="anonymous"></script>
+    <!-- coustomize color -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                primary: '#ABEF5F',
+                primary_two: '#cff4b0',
+              }
+            }
+          }
+        }
+      </script>
 </head>
-<body>
-    <header></header>
+
+<body class="primary-font">
+    <header class="bg-gradient-to-r from-gray-50 to-pink-50">
+        <!-- navbar section -->
+        <section class="container mx-auto py-7 px-5 sm:px-0">
+            <div class="navbar bg-base-100">
+                <div class="navbar-center hidden lg:flex">
+                </div>
+                <div class="navbar-start">
+                    <i class="fa-solid fa-arrow-up rotate-45 mr-2 p-1 rounded-full bg-green-400"></i>
+                    <a class="text-3xl font-extrabold">Rinterio</a>
+                </div>
+                <ul class=" menu menu-horizontal px-1 hidden sm:block">
+                    <div class="flex">
+                        <li><a>Home</a></li>
+                        <li><a>Service</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact Us</a></li>
+                    </div>
+                </ul>
+                <div class="navbar-end">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class=" btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <i class="hidden lg:inline fa-solid fa-magnifying-glass mr-8 p-4 rounded-full bg-[#FFFFFF] border"></i>
+                    <i class="hidden lg:inline fa-solid fa-cart-shopping mr-8 p-4 rounded-full bg-[#FFFFFF] border"></i>
+                        <ul tabindex="0"
+                            class="hidden menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a>Item 1</a></li>
+                            <li><a>Item 2</a></li>
+                            <li><a>Item 3</a></li>
+                        </ul>
+                    </div>
+                    <a class="py-4 px-5 rounded-3xl bg-primary btn-ghost text-xl hidden lg:block">Book Consult<i class="fa-solid fa-arrow-up rotate-45 ml-2 p-1 rounded-full bg-black text-white"></i></a>
+                </div>
+            </div>
+        </section>
+        <!-- header section -->
+         <section class="container mx-auto py-7 px-5 sm:px-0">
+              <div>
+                  <div class="sm:w-1/2 mx-auto">
+                      <img class="sm:w-full" src="./assets/banner.png" alt="">
+                  </div>
+              </div>
+              <div class="text-center space-y-10 flex flex-col justify-center items-center">
+                  <h1 class="sm:w-3/4  text-5xl font-extrabold leading-snug">A barn house of this design has a striking appearance</h1>
+                  <p class="sm:w-3/4  text-base font-medium text-gray-600">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+                  <button><a class="py-4 px-5 rounded-3xl bg-primary_two btn-ghost text-xl">Book Consult<i class="fa-solid fa-arrow-up rotate-45 ml-2 p-2 rounded-full bg-primary text-black"></i></a></button>
+              </div>
+         </section>
+    </header>
     <main></main>
     <footer></footer>
 </body>
+
 </html>
