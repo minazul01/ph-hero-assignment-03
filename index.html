@@ -25,6 +25,8 @@
                 clifford: '#da373d',
                 primary: '#ABEF5F',
                 primary_two: '#cff4b0',
+                primary_bg: '#FFFFFF',
+                primary_bg_section: '#E5E7EB',
               }
             }
           }
@@ -32,7 +34,7 @@
       </script>
 </head>
 
-<body class="primary-font">
+<body class="primary-font h-[5000px]">
     <header class="bg-gradient-to-r from-gray-50 to-pink-50">
         <!-- navbar section -->
         <section class="container mx-auto py-7 px-5 sm:px-0">
@@ -40,7 +42,7 @@
                 <div class="navbar-center hidden lg:flex">
                 </div>
                 <div class="navbar-start">
-                    <i class="fa-solid fa-arrow-up rotate-45 mr-2 p-1 rounded-full bg-green-400"></i>
+                    <i class="fa-solid fa-arrow-up rotate-45 mr-2 p-1 rounded-full bg-primary"></i>
                     <a class="text-3xl font-extrabold">Rinterio</a>
                 </div>
                 <ul class=" menu menu-horizontal px-1 hidden sm:block">
@@ -88,7 +90,41 @@
               </div>
          </section>
     </header>
-    <main></main>
+    <main>
+        <!-- main section starts -->
+         <!-- we design section -->
+          <section class="py-7 px-5 sm:px-0 bg-primary_bg_section my-20">
+               <div class="container mx-auto sm:flex gap-7 py-20 items-center justify-center">
+                   <div class="sm:w-1/2 gap-10">
+                       <p class="text-center sm:text-start py-3 px-8 rounded-3xl bg-primary_bg w-40 mx-auto sm:mx-0 btn-ghost text-base"><i class="mr-2 fa-solid fa-arrow-right"></i> About Us</p>
+                       <h1 class="mt-5 mb-5 text-center sm:text-start text-3xl font-extrabold sm:w-3/5 ">We design thoughtful, liveable spaces</h1>
+                       <p class="text-center sm:text-start text-base font-medium">The barn house captivates with its blend of rustic charm and 
+                         modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                        <div class="flex gap-8 p-10 bg-primary_bg rounded-lg my-5">
+                            <div class="w-24">
+                                <img class="w-full" src="./assets/commercial.png" alt="">
+                            </div>
+                            <div>
+                                <h1 class=" text-2xl font-extrabold">Commercial</h1>
+                                <p class=" text-base font-medium">The barn house captivates with its blend of rustic charm and modern.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-8 p-10 bg-primary_bg rounded-lg my-5">
+                            <div class="w-24">
+                                <img class="w-full" src="./assets/commercial.png" alt="">
+                            </div>
+                            <div>
+                                <h1 class=" text-2xl font-extrabold">Residential</h1>
+                                <p class=" text-base font-medium">Make your home a cozy, stylish haven with thoughtful design elements.</p>
+                            </div>
+                        </div>
+                   </div>
+                   <div class="sm:w-1/2">
+                      <img class="w-full" src="./assets/Rectangle.png" alt="">
+                   </div>
+               </div>
+          </section>
+    </main>
     <footer></footer>
 </body>
 
