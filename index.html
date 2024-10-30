@@ -26,7 +26,7 @@
                 primary: '#ABEF5F',
                 primary_two: '#cff4b0',
                 primary_bg: '#FFFFFF',
-                primary_bg_section: '#E5E7EB',
+                primary_bg_section: '#F4F4F4',
               }
             }
           }
@@ -35,10 +35,10 @@
 </head>
 
 <body class="primary-font h-[5000px]">
-    <header class="bg-gradient-to-r from-gray-50 to-pink-50">
+    <header class="bg-gradient-to-t from-gray-50 to-pink-50">
         <!-- navbar section -->
         <section class="container mx-auto py-7 px-5 sm:px-0">
-            <div class="navbar bg-base-100">
+            <div class="navbar bg-base-100 rounded-3xl">
                 <div class="navbar-center hidden lg:flex">
                 </div>
                 <div class="navbar-start">
@@ -64,9 +64,9 @@
                             </svg>
                         </div>
                         <i class="hidden lg:inline fa-solid fa-magnifying-glass mr-8 p-4 rounded-full bg-[#FFFFFF] border"></i>
-                    <i class="hidden lg:inline fa-solid fa-cart-shopping mr-8 p-4 rounded-full bg-[#FFFFFF] border"></i>
+                    <i class=" lg:inline fa-solid fa-cart-shopping mr-8 p-4 rounded-full bg-[#FFFFFF] border"></i>
                         <ul tabindex="0"
-                            class="hidden menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            class="right-0 menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
                             <li><a>Item 1</a></li>
                             <li><a>Item 2</a></li>
                             <li><a>Item 3</a></li>
@@ -85,7 +85,7 @@
               </div>
               <div class="text-center space-y-10 flex flex-col justify-center items-center">
                   <h1 class="sm:w-3/4  text-5xl font-extrabold leading-snug">A barn house of this design has a striking appearance</h1>
-                  <p class="sm:w-3/4  text-base font-medium text-gray-600">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+                  <p class="sm:w-3/4  text-base font-medium text-gray-600">We specialize in designing spaces that are both thoughtful and livable, balancing style and functionality to enhance everyday life.</p>
                   <button><a class="py-4 px-5 rounded-3xl bg-primary_two btn-ghost text-xl">Book Consult<i class="fa-solid fa-arrow-up rotate-45 ml-2 p-2 rounded-full bg-primary text-black"></i></a></button>
               </div>
          </section>
@@ -93,7 +93,7 @@
     <main>
         <!-- main section starts -->
          <!-- we design section -->
-          <section class="py-7 px-5 sm:px-0 bg-primary_bg_section my-20">
+          <section class="py-7 px-5 sm:px-0 bg-primary_bg_section relative">
                <div class="container mx-auto sm:flex gap-7 py-20 items-center justify-center">
                    <div class="sm:w-1/2 gap-10">
                        <p class="text-center sm:text-start py-3 px-8 rounded-3xl bg-primary_bg w-40 mx-auto sm:mx-0 btn-ghost text-base"><i class="mr-2 fa-solid fa-arrow-right"></i> About Us</p>
@@ -123,7 +123,98 @@
                       <img class="w-full" src="./assets/Rectangle.png" alt="">
                    </div>
                </div>
+               <div class="absolute top-14 left-10 p-3 outline-dashed hidden sm:block">
+                  <img src="./assets/Vector.png" alt="">
+               </div>
           </section>
+          <!-- review section -->
+           <section class="bg-primary_bg_section py-0 sm:py-20 px-5 sm:px-0">
+                <div class="container mx-auto bg-primary_bg rounded-lg sm:flex justify-between">
+                    <!-- review card -->
+                     <div class="p-10">
+                         <div>
+                            <i class=" fa-regular fa-message ml-32 sm:ml-16"></i>
+                         </div>
+                         <h4 class="text-3xl font-extrabold mb-3 text-center">235+</h4>
+                         <p class="text-base font-medium text-center text-gray-500">Happy Client Review</p>
+                     </div>
+                     <div class="p-10">
+                         <div>
+                            <i class="fa-regular fa-message mb-5 ml-32 sm:ml-16"></i>
+                         </div>
+                         <h4 class="text-3xl font-extrabold mb-3 text-center">235+</h4>
+                         <p class="text-base font-medium text-center text-gray-500">Happy Client Review</p>
+                     </div>
+                     <div class="p-10">
+                         <div>
+                            <i class="fa-regular fa-message mb-5 ml-32 sm:ml-16"></i>
+                         </div>
+                         <h4 class="text-3xl font-extrabold mb-3 text-center">235+</h4>
+                         <p class="text-base font-medium text-center text-gray-500">Happy Client Review</p>
+                     </div>
+                     <div class="p-10">
+                         <div>
+                            <i class="fa-regular fa-message mb-5 ml-32 sm:ml-16"></i>
+                         </div>
+                         <h4 class="text-3xl font-extrabold mb-3 text-center">235+</h4>
+                         <p class="text-base font-medium text-center text-gray-500">Happy Client Review</p>
+                     </div>
+                </div>
+           </section>
+           <!-- Work process section -->
+            <section class="bg-primary_bg_section py-20 px-5 sm:px-0">
+                 <div class="container mx-auto">
+                    <div class="text-center space-y-5">
+                        <div class="w-56 mx-auto">
+                            <p class="text-center sm:text-start py-3 px-8 rounded-3xl bg-primary_bg w-40 mx-auto sm:mx-0 btn-ghost text-base"><i class="mr-2 fa-solid fa-arrow-right"></i> About Us</p>
+                        </div>
+                        <h1 class="text-4xl font-bold">Our Works Process</h1>
+                        <p class="sm:w-2/4 mx-auto text-base font-medium">Our work process includes planning, designing, and executing each project with precision, creativity, and clear communication for top results.</p>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-4 gap-5 mt-5">
+                        <!-- card 1 -->
+                          <div class="card bg-[#E7C1D3] text-primary-content">
+                            <div class="card-body">
+                                <div>
+                                    <img src="./assets/concept.png" alt="">
+                                </div>
+                              <h2 class="card-title text-black">Concept</h2>
+                              <p class="text-gray-700">The barn house captivates with its blend of rustic charm and modern.</p>
+                            </div>
+                          </div>
+                        <!-- card 2 -->
+                          <div class="card bg-[#EFDA6E] text-primary-content">
+                            <div class="card-body">
+                                <div>
+                                    <img src="./assets/flow-chart.png" alt="">
+                                </div>
+                              <h2 class="card-title text-black">Concept</h2>
+                              <p class="text-gray-700">The barn house captivates with its blend of rustic charm and modern.</p>
+                            </div>
+                          </div>
+                        <!-- card 3 -->
+                          <div class="card bg-[#A4DAC3] text-primary-content">
+                            <div class="card-body">
+                                <div>
+                                    <img src="./assets/vision.png" alt="">
+                                </div>
+                              <h2 class="card-title text-black">Concept</h2>
+                              <p class="text-gray-700">The barn house captivates with its blend of rustic charm and modern.</p>
+                            </div>
+                          </div>
+                        <!-- card 4 -->
+                          <div class="card bg-[#77AAEA] text-primary-content">
+                            <div class="card-body">
+                                <div>
+                                    <img src="./assets/budget-planning.png" alt="">
+                                </div>
+                              <h2 class="card-title text-black">Concept</h2>
+                              <p class="text-gray-700">The barn house captivates with its blend of rustic charm and modern.</p>
+                            </div>
+                          </div>
+                    </div>
+                 </div>
+            </section>
     </main>
     <footer></footer>
 </body>
